@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition_type": "Python",
+ "creation": "2025-11-07 16:09:18.488888",
+ "date_changed": "insurance_expiry",
+ "days_in_advance": 3,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Vehicle",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h1>Insurance expiry is near!</h1>\n\n<p>Hi, the insurance for {{doc.title}} with Registration Number: {{doc.license_plate}} is expiring on {{ doc.insurance_expiry}} </p>",
+ "message_type": "HTML",
+ "minutes_offset": 0,
+ "modified": "2025-11-07 16:09:18.488888",
+ "modified_by": "raghavruia.dev@gmail.com",
+ "module": "Caber",
+ "name": "Insurance Expiry Reminder",
+ "owner": "raghavruia.dev@gmail.com",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Insurance for {{ doc.title }} ({{ doc.license_plate}}) is expiring in 3 days"
+}
